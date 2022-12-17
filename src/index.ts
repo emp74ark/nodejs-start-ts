@@ -1,8 +1,10 @@
-import os from 'os';
-import express, { response } from 'express';
 import * as dotenv from 'dotenv';
-dotenv.config();
+import express from 'express';
+import os from 'os';
 import { styles } from './controller/path-resolver';
+import { default as pageRoutes } from './routes/routes-pages';
+import { default as errorRoutes } from './routes/routes-err';
+dotenv.config();
 
 const port = Number(process.env.PORT);
 
@@ -22,7 +24,5 @@ server.use((request, response, next) => {
 
 server.use(express.static(styles));
 server.use(express.urlencoded({ extended: false }));
-
-server.get('/', (request, response) => {
-  response.end('<h1>Server works!</>')
-})
+server.use(pageRoutes);
+server.use(errorRoutes);

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+pre {
+  font-family: 'Fira Mono', monospace;
+  border-radius: 10px;
+  background: #ccc;
+  padding: 10px;
+  max-width: 60ch;
+}
+nav {
+  background: rgb(135, 156, 146);
+  padding: 10px 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
