@@ -30,3 +30,19 @@ nav a {
   text-decoration: none;
   font-size: 20px;
 }
+
+.text::first-letter {
+  margin-left: 20px;
+}
+
+.date {
+  font-style: italic;
+  padding: 5px 20px;
+  background: #ccc;
+}
+
+.form-control {
+  display: flex;
+  margin: 10px;
+  gap: 5px;
+}

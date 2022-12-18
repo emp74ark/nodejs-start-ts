@@ -1,7 +1,8 @@
 import * as dotenv from 'dotenv';
 import express from 'express';
 import os from 'os';
-import { styles } from './controller/path-resolver';
+import hbs from 'hbs';
+import { styles, templates } from './controller/path-resolver';
 import { default as pageRoutes } from './routes/routes-pages';
 import { default as apiRoutes } from './routes/routes-api';
 import { default as errorRoutes } from './routes/routes-err';
@@ -25,6 +26,8 @@ server.use((request, response, next) => {
 
 server.use(express.static(styles));
 server.use(express.urlencoded({ extended: false }));
+server.set('view engine', 'hbs');
+hbs.registerPartials(templates);
 server.use(pageRoutes);
 server.use(apiRoutes);
 server.use(errorRoutes);

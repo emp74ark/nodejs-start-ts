@@ -1,1 +1,20 @@
-[{"id":1671196412991,"date":"2022-12-15","title":"Record 1","text":"Record 1 text"},{"id":1671196412992,"date":"2022-12-16","title":"Record 2","text":"Record 2 text"},{"id":1671196412993,"date":"2022-12-17","title":"Record 3","text":"Record 3 text"},{"id":1671377486103,"title":"EditedTitle","text":"EditedText","date":"2023-12-23"}]
+[
+  {
+    "id": 1671391879204,
+    "title": "Record 1",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "date": "2022-12-11"
+  },
+  {
+    "id": 1671391893276,
+    "title": "Record 2",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "date": "2022-12-12"
+  },
+  {
+    "id": 1671391904665,
+    "title": "Record 3",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "date": "2022-12-14"
+  }
+]

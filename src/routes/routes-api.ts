@@ -1,19 +1,5 @@
 import express from 'express';
-import fs from 'fs';
-import { data } from '../controller/path-resolver';
-
-type Record = { id: number; title: string; text: string; date: string };
-
-function getData(): Record[] {
-  const raw = fs.readFileSync(data, 'utf8');
-  return JSON.parse(raw);
-}
-
-function updateData(newData: Record[]) {
-  fs.writeFile(data, JSON.stringify(newData), (err) => {
-    if (err) console.log(err);
-  });
-}
+import { getData, updateData } from '../controller/data-resolvers';
 
 const router = express.Router();
 

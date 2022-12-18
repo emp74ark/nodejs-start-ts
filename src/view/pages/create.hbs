@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<body>
+  {{> nav}}
+  <h1>{{title}}</h1>
+  <form action="/records" method="post">
+    <div class="form-control">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title">
+    </div>
+      <div class="form-control">
+      <label for="text">Text</label>
+    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+    </div>
+    <div class="form-control">
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date">
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

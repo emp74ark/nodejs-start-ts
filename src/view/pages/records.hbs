@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{{> head}}
+<body>
+  {{> nav}}
+  <h1>{{title}}</h1>
+  <a href="/create">Create new record</a>
+  <ul>
+    {{#each records}}
+      <li>
+        <a href='/records/{{this.id}}'>
+          <span>{{this.title}} ({{this.date}})</span>
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+</body>
+</html>
