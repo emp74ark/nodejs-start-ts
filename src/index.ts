@@ -3,6 +3,7 @@ import express from 'express';
 import os from 'os';
 import { styles } from './controller/path-resolver';
 import { default as pageRoutes } from './routes/routes-pages';
+import { default as apiRoutes } from './routes/routes-api';
 import { default as errorRoutes } from './routes/routes-err';
 dotenv.config();
 
@@ -25,4 +26,5 @@ server.use((request, response, next) => {
 server.use(express.static(styles));
 server.use(express.urlencoded({ extended: false }));
 server.use(pageRoutes);
+server.use(apiRoutes);
 server.use(errorRoutes);
